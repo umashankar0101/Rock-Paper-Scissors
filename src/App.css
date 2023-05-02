@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+    --primary: antiquewhite;
+    --primary-dark: #120b0c;
+    --primary-light: #5472d3;
+    --primary-text : #23a3b9;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  html {
+    /* background: rgb(193,36,251);
+    background: linear-gradient(42deg, rgba(193,36,251,1) 0%, rgba(127,116,234,1) 49%, rgba(74,235,247,1) 100%); 
+    background-repeat: no-repeat;
+     */
+    
+     background-image:url(../src/assests/back.jpg);
+     
+     background-size: cover;
   }
-  to {
-    transform: rotate(360deg);
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    background-color: var(--primary-dark);
+    color: var(--primary-text);
+    padding: 8px;
   }
-}
+  
+  h2 {
+    padding-top: 10vh;
+    font-size: 30px;
+    color:#0481e0;
+  }
+  
+  .center {
+    text-align: center;
+    height: 100vh;
+  }
+
+  
+  .container {
+    margin-top: 25vh;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: center;
+    
+  }
+  
+  .player {
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-text);
+    color: var(--primary-text);
+    border-radius: 20%;
+    
+  }
+
+  
+  
+  .score {
+    padding: 1px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: var(--primary-dark);
+    
+  }
+  
+  .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: var(--primary);
+    
+  }
+  
+  .round-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    background-color: var(--primary-dark);
+    color: var(--primary-text);
+  }
+  
+  .round-btn:hover {
+    background-color:#00BFFF;
+    color: aliceblue;
+    border: 2px solid rgb(107, 240, 107) ;
+  }
+
+  .footer{
+    font-size: 20px;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    background-color: antiquewhite;
+    border: 1px solid black;
+
+  }
+
+  a{
+    text-decoration: none;
+  }
